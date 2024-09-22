@@ -31,23 +31,13 @@ $white: rgba(255, 255, 255, 1);
 .hero__container {
     text-align: center;
     padding: 50px 0;
-
-    h4 {
-        font-size: 1.5rem;
-        color: #6c757d;
-    }
-
-    h3 {
-        font-size: 2rem;
-        color: #333;
-        margin-bottom: 30px;
-    }
 }
 
 .hero__info {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 104px;
 }
 
 .hero__card {
@@ -69,21 +59,31 @@ $white: rgba(255, 255, 255, 1);
     }
 
     span {
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
         display: block;
-        font-size: 1.2rem;
-        color: #9b9b9b;
+        color: #0B1131;
         margin-bottom: 10px;
     }
 
     h5 {
-        font-size: 1.3rem;
-        color: #333;
+        font-family: 'Poppins';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 68px;
+        color: #0B1131;
         margin-bottom: 15px;
     }
 
     p {
-        font-size: 0.9rem;
-        color: #9b9b9b;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+        color: #0B1131;
     }
 
     // Background color for cards
@@ -125,7 +125,6 @@ $white: rgba(255, 255, 255, 1);
         font-size: 48px;
         font-weight: 700;
         line-height: 68px;
-        text-align: center;
         color: #0B1131;
 
     }
@@ -133,92 +132,289 @@ $white: rgba(255, 255, 255, 1);
 
 .feature__section {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: #4254f6;
     padding: 50px;
-    color: #fff;
-    overflow: hidden;
+    background-color: #1d1af1; // Blue background color
+    border-radius: 15px;
+    position: relative;
     margin-top: 222px;
-    gap: 167px;
+    height: 675px;
+}
 
-    .feature__content {
-        flex: 1;
-        padding-right: 20px;
-        position: relative;
-        text-align: left;
+.feature__content {
+    color: white;
+    max-width: 50%; // Adjust this value for more/less width
 
-        h5 {
+    h5 {
+        font-family: 'Poppins';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 68px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: #5975FF;
+    }
+
+    h2 {
+        font-family: 'Poppins';
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 68px;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 15px;
+        color: #B8C6D6
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 25px;
+        background-color: #111849;
+        color: #1d1af1;
+        font-weight: 600;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: #ddd;
+            color: #1d1af1;
+        }
+    }
+}
+
+.feature__image {
+
+    img {
+        position: absolute;
+        max-width: 100%;
+        height: auto;
+        top: -100px;
+        right: 100px;
+    }
+}
+
+.section__container {
+    gap: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 0 80px;
+
+    .section__left {
+        box-shadow: 0px 50px 100px 0px #0000001A;
+        margin-bottom: 36px;
+        text-align: center;
+        padding: 63px 45px 63px 46px;
+
+        h6 {
             font-family: 'Poppins';
             font-size: 24px;
-            font-weight: 600;
-            line-height: 68px;
-            margin-bottom: 10px;
-            color: #5975FF;
-
-        }
-
-        h2 {
-            margin-bottom: 20px;
-            font-family: 'Poppins';
-            font-size: 48px;
             font-weight: 700;
-            line-height: 68px;
-            text-align: left;
+            line-height: 34px;
+            color: #0B1131;
 
         }
 
-        p {
-            margin-bottom: 20px;
+    }
+
+    .section__center {
+        box-shadow: 0px 50px 100px 0px #0000001A;
+        text-align: center;
+        padding: 63px 45px 63px 46px;
+
+        h6 {
             font-family: 'Poppins';
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 28px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+            color: #0B1131;
+
+        }
+    }
+
+    .section__right {
+        box-shadow: 0px 50px 100px 0px #0000001A;
+        text-align: center;
+        padding: 63px 45px 63px 46px;
+
+        h6 {
+            font-family: 'Poppins';
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+            color: #0B1131;
+
+        }
+    }
+}
+
+.section__desk {
+    h6 {
+        font-family: 'Poppins';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 68px;
+        color: #3029D9;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        font-family: 'Poppins';
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 68px;
+        color: #0B1131;
+        margin-bottom: 24px;
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 24px;
+
+    }
+}
+
+// Responsive design for smaller devices
+
+
+@media screen and (max-width:992px) {
+
+    .hero__container {
+        background: orangered;
+        padding: 35px 0;
+
+        h4 {
+            font-size: 22px;
+            line-height: 60px;
 
         }
 
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #000;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+        h3 {
+            font-size: 44px;
+            line-height: 60px;
+        }
 
-            &:hover {
-                background-color: #333;
+        .hero__card {
+
+            img {
+                margin-bottom: 15px;
+            }
+
+            h5 {
+                font-size: 22px;
+                line-height: 55px;
+            }
+
+            p {
+                line-height: 25px;
             }
         }
     }
 
+    .feature__content,
     .feature__image {
-        flex: 1;
-        display: flex;
-        justify-content: center;
+        margin-bottom: 20px;
 
+    }
+
+    .feature__image {
         img {
-            height: auto;
-            object-fit: cover;
-            position: absolute;
-            top: 550px;
+            top: -70px;
+            width: 350px;
+            height: 650px;
         }
     }
+
 }
 
 @media screen and (max-width: 768px) {
     .hero__info {
         flex-direction: column;
-        margin-left: 250px;
+        margin-left: 190px;
     }
 
     .hero__card {
         width: 50%;
         margin-bottom: 20px;
     }
+
+    .hero__card--blue {
+        width: 359px;
+    }
+
+    .hero__card--darkblue {
+        width: 359px;
+    }
+
+    .hero__card1 {
+        width: 359px;
+    }
+
+    .feature__section {
+        text-align: center;
+        color: black;
+        gap: 50px;
+    }
+
+    .feature__content,
+    .feature__image {
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .feature__image {
+        img {
+            top: 60px;
+            width: 250px;
+            height: 500px;
+        }
+    }
+    .section__container{
+        flex-direction: column;
+    }
+
 }
+
 @media screen and (max-width:576px) {
-    .hero__container{
+    .hero__container {
+        background-color: transparent;
+    }
+
+    .hero__info {
+        margin-left: -1px;
+    }
+
+    .hero__card--blue {
+        width: 328px;
+    }
+
+    .hero__card--darkblue {
+        width: 328px;
+    }
+
+    .hero__card1 {
+        width: 328px;
+    }
+
+    .feature__section {
         display: none;
     }
-    
+
+    .section__container{
+        flex-direction: column;
+    }
 }
